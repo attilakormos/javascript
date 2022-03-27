@@ -1,4 +1,4 @@
-// Használata
+// Példák létrehozásra:
 // egyszerű: - bevásárlólista, - lottószámok, - rendetlen adatok 
 // összetett: - lejátszólisták, - hozzászólások, - tanulók
 
