@@ -68,6 +68,6 @@ console.log(torolt_elem);
 let atalakitas = torolt_elem.join();
 console.log(atalakitas);
 
-// // Törölt elem tömb átalakítása stringgé határolókarakterekkel
+// Törölt elem tömb átalakítása stringgé határolókarakterekkel
 atalakitas = torolt_elem.join(' - ');
 console.log(atalakitas);
