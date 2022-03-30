@@ -25,6 +25,7 @@ csapatok.splice(x, 0, 'Békéscsaba', 'Nyíregyháza', 'Pécs');
 console.log(csapatok);
 
 
+
 // ELEMEK TÖRLÉSE
 // Tömb utolsó elemének törlése - változóba írható a törölt elem értéke
 let torolt_elem = csapatok.pop();
@@ -44,11 +45,29 @@ console.log(csapatok);
 console.log(torolt_elem); // Egy tömböt ad vissza egy elem esetén is
 
 // Tömb több elemének törlése
-x = 0; // Az első elemtől kezdve
-elemszam = 2; // Két elemet
+x = 0; // Az első elemtől (0. indextől) kezdve
+elemszam = 2; // Két elem törlése
 torolt_elem = csapatok.splice(x, elemszam);
 console.log(csapatok);
 console.log(torolt_elem);
 
 
+// ELEMEK CSERÉJE
+// Az indexre hivatkozással új érték beállítása
+csapatok[8] = "Szeged";
+console.log(csapatok);
 
+// Splice függvény erre is jó
+x = 7; // A nyolcadik elemtől (7. indextől) kezdve
+elemszam = 3; // Három elem cseréje
+torolt_elem = csapatok.splice(x,elemszam,'Eger','Sopron','Győr');
+console.log(csapatok);
+console.log(torolt_elem);
+
+// Törölt elem tömb átalakítása stringgé
+let atalakitas = torolt_elem.join();
+console.log(atalakitas);
+
+// // Törölt elem tömb átalakítása stringgé határolókarakterekkel
+atalakitas = torolt_elem.join(' - ');
+console.log(atalakitas);
