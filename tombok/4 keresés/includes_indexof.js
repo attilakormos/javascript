@@ -1,4 +1,4 @@
-// Kiinduló tömbök
+// Kiinduló tömb
 let adatok = ['labda', 'könyv', 9, 'lapát', 4, true, 'ecset', 7.22, false];
 
 
