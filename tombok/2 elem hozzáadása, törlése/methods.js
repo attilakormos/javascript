@@ -1,6 +1,7 @@
 // Kiindulótömb létrehozása
 let csapatok = ['Ferencváros', 'Videoton', 'Debrecen','Honvéd','MTK','Paks'];
 
+// ELEMEK HOZZÁADÁSA
 // Új elem hozzáadása a tömb végéhez - tomb.length index is ugyanez 
 csapatok.push('Vasas');
 console.log(csapatok);
@@ -14,8 +15,13 @@ let x = 1; // Ez valójában a második pozíció
 csapatok.splice(x, 0, 'Kaposvár');
 console.log(csapatok);
 
+// Új elemek hozzáadása a tömb x-edik elemétől
+x = 2;
+csapatok.splice(x, 0, 'Békéscsaba', 'Nyíregyháza', 'Pécs');
+console.log(csapatok);
 
 
+// ELEMEK TÖRLÉSE
 // Tömb utolsó elemének törlése - változóba írható a törölt elem értéke
 let torolt_elem = csapatok.pop();
 console.log(csapatok);
