@@ -24,13 +24,12 @@ szamok.sort();
 console.log(szamok);
 
 
-// Számok tényleges rendezése
+// Számok tényleges rendezése függvénnyel
 function szamrendezo(a, b) {
     return a - b;
 }
 szamok.sort(szamrendezo);
 console.log(szamok);
-
 
 // Számok fordított rendezése
 function szamrendezo_f(a, b) {
@@ -40,11 +39,18 @@ szamok.sort(szamrendezo_f);
 console.log(szamok);
 
 
-// Arrow function-el (így kell használni, a mikéntje rejtély)
+// Arrow function-el
 szamok.sort((a, b) => a - b);
 console.log(szamok);
-
 
 // Számok fordított rendezése
 szamok.sort((a, b) => b - a);
 console.log(szamok);
+
+
+// A rendező függvény csak teljes számtömböknél működik
+vegyes.sort(szamrendezo);
+console.log(vegyes);
+
+vegyes.sort()
+console.log(vegyes);
