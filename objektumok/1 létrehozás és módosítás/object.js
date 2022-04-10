@@ -36,7 +36,7 @@ console.log(lakasCim.emelet);
 delete lakasCim.hely;
 delete lakasCim["kiado"];
 
-console.log(lakasCim.hely);   // undefined
+console.log(lakasCim.hely);   // undefined eredmény, mivel már nem létezik
 console.log(lakasCim.kiado);  // undefined
 
 
